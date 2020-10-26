@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     EditText address;
     EditText email;
     EditText dob;
-    TextView respond;
+    TextView respond = "";
     String respondStr;
     DatePicker datePicker;
     Calendar calendar;
@@ -92,7 +92,12 @@ public class MainActivity extends AppCompatActivity {
                     if (btnMale.getId() != radioId && btnFemale.getId() != radioId){
                         respondStr += "Gender, ";
                     }
-                    respond.setText(removeLastCharacter(respondStr) + " is missing, please fill all the form!");
+                    if (respondStr.length() == 0) {
+                        respond.setText("Register successful!")
+                    } else {
+                        respond.setText(removeLastCharacter(respondStr) + " is missing, please fill all the form!");
+                    }
+     
                 }
 
             }
