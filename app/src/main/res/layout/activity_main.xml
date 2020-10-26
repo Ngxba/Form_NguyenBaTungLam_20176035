@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="@string/firstName"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginLeft="116dp"
+            android:layout_weight=".25"
+            android:text="@string/lastName"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="12dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.75"
+            android:autofillHints=""
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:hint="@string/firstName"
+            android:textColor="#b0b0b0"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.75"
+            android:autofillHints=""
+            android:background="@drawable/custom_edittext"
+            android:padding="5dp"
+            android:hint="@string/lastName"
+            android:textColor="#b0b0b0"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/radioBtnGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/btnMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/btnFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:text="DOB"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="300dp"
+                android:layout_height="37dp"
+                android:layout_weight="0.75"
+                android:autofillHints=""
+                android:background="@drawable/custom_edittext"
+                android:padding="5dp"
+                android:hint="Choose your day of birth"
+                android:textColor="#b0b0b0"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editDate"
+                android:layout_width="76dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#d6d6d6"
+                android:text="Select"
+                android:onClick="setDate"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="@string/address"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="388dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.75"
+            android:autofillHints=""
+            android:background="@drawable/custom_edittext"
+            android:gravity="start"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:hint="@string/address"
+            android:textColor="#b0b0b0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="@string/email"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="388dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.75"
+            android:autofillHints=""
+            android:background="@drawable/custom_edittext"
+            android:gravity="start"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:hint="@string/email"
+            android:textColor="#b0b0b0"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="5dp"/>
+    <CheckBox
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to Terms of Use"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:background="#d6d6d6"
+        android:layout_gravity="center"
+        android:text="REGISTER"
+        android:textSize="16sp" />
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp"/>
+    <TextView
+        android:id="@+id/respond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#800000"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FormForSubmit1</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="gender">Sex</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+</resources>
